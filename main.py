@@ -123,8 +123,6 @@ def text_to_speech(text):
 def process_responses(responses):
     num_chars_printed = 0
     for response in responses:
-        # if stop_flag:
-        #     break
         if not response.results:
             continue
         result = response.results[0]
